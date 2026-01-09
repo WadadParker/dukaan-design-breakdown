@@ -6,7 +6,7 @@ import IconButton from "../kit/IconButton"
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-evenly items-center p-4">
+    <nav className="flex justify-evenly items-center p-4 pb-3 border-b bg-white border-border ">
     <section className="flex grow justify-center gap-x-1.5 items-center">
         <QuestionMark />
         <small className="text-text">How it works?</small>

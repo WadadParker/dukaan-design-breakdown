@@ -1,6 +1,7 @@
 import ArrowDown from "./components/icons/ArrowDown"
 import ArrowRight from "./components/icons/ArrowRight"
 import QuestionMark from "./components/icons/QuestionMark"
+import AmountCard from "./components/main/AmountCard"
 import Navbar from "./components/main/Navbar"
 import NavItems from "./components/sidebar/NavItems"
 import ProfileHeader from "./components/sidebar/ProfileHeader"
@@ -16,7 +17,7 @@ function App() {
         </div>
         <div className="grow ">
           <Navbar />
-          <main className="px-7 pt-6">
+          <main className="px-7 pt-6 space-y-6">
             <section className='flex justify-between items-center'>
               <h1 className='text-text-dark text-xl font-medium'>Overview</h1>
               <aside className='relative bg-white'>
@@ -27,22 +28,13 @@ function App() {
                 <ArrowDown />
               </aside>
             </section>
-            <ul className="flex">
-              <li className="rounded-md bg-white p-4 space-y-2">
-                <header className="flex items-center gap-x-2">
-                  <h1 className="text-text">Amount Pending</h1>
-                  <QuestionMark />
-                </header>
 
-                <aside className="flex justify-between">
-                  <h1 className=" text-3xl font-medium">₹23,72.20</h1>
-                  <button className="flex items-center underline gap-x-2.5">
-                    <p className="mb-1">13 order</p>
-                    <ArrowRight />
-                  </button>
-                </aside>
-              </li>
+            <ul className="flex gap-x-4">
+              <AmountCard blueCard title="Next Payout" amount="2,312.23" orders={23}/>
+              <AmountCard title="Amount Pending" amount="92,312.20" orders={13}/>
+              <AmountCard title="Amount Processed" amount="23,92,312.19"/>
             </ul>
+
           </main>
         </div>
       </div>

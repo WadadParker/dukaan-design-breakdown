@@ -11,6 +11,16 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Hide scrollbar for Firefox */
+* {
+  scrollbar-width: none;
+}
+
+/* Hide scrollbar for Chrome, Safari, and Edge */
+*::-webkit-scrollbar {
+  display: none;
+}
+
 @theme {
   --color-primary: #1E2640;
   --color-background: #353C53 ;

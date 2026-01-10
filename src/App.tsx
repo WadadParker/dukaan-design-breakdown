@@ -1,8 +1,7 @@
 import ArrowDown from "./components/icons/ArrowDown"
-import ArrowRight from "./components/icons/ArrowRight"
-import QuestionMark from "./components/icons/QuestionMark"
 import AmountCard from "./components/main/AmountCard"
 import Navbar from "./components/main/Navbar"
+import Table from "./components/main/Table"
 import NavItems from "./components/sidebar/NavItems"
 import ProfileHeader from "./components/sidebar/ProfileHeader"
 
@@ -10,14 +9,14 @@ import ProfileHeader from "./components/sidebar/ProfileHeader"
 function App() {
 
   return (
-      <div className="bg-background-white flex h-screen w-screen overflow-hidden">
-        <div className=" w-56 bg-primary py-4 px-2">
+      <div className="bg-background-white flex h-screen w-screen ">
+        <div className="h-full w-56 bg-primary flex flex-col py-4 px-2  ">
           <ProfileHeader />
           <NavItems />
         </div>
-        <div className="grow ">
+        <div className="grow overflow-y-scroll ">
           <Navbar />
-          <main className="px-7 pt-6 space-y-6">
+          <main className="px-7 pt-6 space-y-6 ">
             <section className='flex justify-between items-center'>
               <h1 className='text-text-dark text-xl font-medium'>Overview</h1>
               <aside className='relative bg-white'>
@@ -35,6 +34,13 @@ function App() {
               <AmountCard title="Amount Processed" amount="23,92,312.19"/>
             </ul>
 
+            <h1 className='text-text-dark text-xl font-medium pt-6'>Transactions | This Month</h1>
+            <aside className=' space-x-3'>
+              <span className='py-1.5 px-4 bg-secondary rounded-full text-sm font-medium text-white'>Payouts {"(22)"}</span>   
+              <span className='py-1.5 px-4 bg-background-light rounded-full text-sm font-medium text-[#808080] '>Refunds {"(6)"}</span>
+            </aside>
+
+            <Table />
           </main>
         </div>
       </div>

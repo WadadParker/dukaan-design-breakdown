@@ -2,6 +2,7 @@ import ArrowDown from "./components/icons/ArrowDown"
 import AmountCard from "./components/main/AmountCard"
 import Navbar from "./components/main/Navbar"
 import Table from "./components/main/Table"
+import AvailbleCredits from "./components/sidebar/AvailableCredits"
 import NavItems from "./components/sidebar/NavItems"
 import ProfileHeader from "./components/sidebar/ProfileHeader"
 
@@ -13,6 +14,7 @@ function App() {
         <div className="h-full w-56 bg-primary flex flex-col py-4 px-2  ">
           <ProfileHeader />
           <NavItems />
+          <AvailbleCredits />
         </div>
         <div className="grow overflow-y-scroll ">
           <Navbar />

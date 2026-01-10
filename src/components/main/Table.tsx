@@ -65,7 +65,7 @@ const TableCardItem: React.FC<TableCardItemProp>=({orderId,successful,transactio
     return (
         <tr >
             <td className='text-secondary px-0 font-medium  text-sm leading-5 max-sm:text-[8.5px] '>
-              <p className={`${tableData.length===(index + 1)?"":"border-b"} border-background-light py-3.5 ml-3 max-sm:ml-1.5`}>#{orderId}</p>
+              <p className={`${tableData.length===(index + 1)?"":"border-b"} border-background-light py-3.5 ml-3 hover:text-seconary-dark transition-all ease-linear hover:underline hover:cursor-pointer max-sm:ml-1.5`}>#{orderId}</p>
             </td>
             <td className=' p-0 text-sm leading-5 max-sm:text-[8.5px]'>
               <section className={`${tableData.length===(index + 1)?"":"border-b"} w-fit  px-3 py-3.5  border-background-light flex items-center space-x-1.5 max-sm:px-0 max-sm:space-x-0.75`}>

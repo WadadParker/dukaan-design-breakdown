@@ -9,7 +9,7 @@ const Navbar = () => {
     <nav className="flex justify-evenly items-center p-4 pb-3 border-b bg-white border-border sticky top-0 ">
     <section className="flex grow justify-center gap-x-1.5 items-center">
         <QuestionMark />
-        <small className="text-text">How it works?</small>
+        <small className="text-text hover:underline hover:cursor-pointer">How it works?</small>
     </section>
 
     <SearchBar />

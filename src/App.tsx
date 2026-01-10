@@ -39,7 +39,8 @@ function App() {
             <h1 className='text-text-dark text-xl font-medium pt-6'>Transactions | This Month</h1>
             <aside className=' space-x-3'>
               <span className='py-1.5 px-4 bg-secondary rounded-full text-sm font-medium text-white'>Payouts {"(22)"}</span>   
-              <span className='py-1.5 px-4 bg-background-light rounded-full text-sm font-medium text-[#808080] '>Refunds {"(6)"}</span>
+              <span className='py-1.5 px-4 bg-background-light rounded-full text-sm font-medium text-[#808080] 
+              hover:text-secondary hover:cursor-pointer transition-all ease-linear'>Refunds {"(6)"}</span>
             </aside>
 
             <Table />

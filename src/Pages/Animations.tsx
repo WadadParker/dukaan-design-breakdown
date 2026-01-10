@@ -1,7 +1,10 @@
 
 const Animations = () => {
   return (
-    <div>Animations</div>
+    <div className="flex h-screen w-screen justify-center items-center gap-x-6 text-4xl">
+        <label>Save:</label>
+        <button className="px-5 py-2 border rounded-lg">Click</button>
+    </div>
   )
 }
 
